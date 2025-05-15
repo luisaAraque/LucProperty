@@ -258,7 +258,7 @@
                 <a href="assets/img/property/casa7.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/property/casa7.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" onclick="guardarClick(7)" title="Ver Detalles">En Arriendo Casa Colonial Bogotá Chapinero Alto</a></h4>
-                  <p>Precio:$780,000,000</p>
+                  <p>Precio:$7,000,000 COP</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -371,7 +371,7 @@
             <div class="social-links d-flex mt-4">
             <a href="https://www.instagram.com/"><i class="bi bi-facebook"></i></a>
             <a href="https://www.facebook.com/?locale=es_LA"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/573223226897?text=Hola%2C%20estoy%20interesado%20en%20una%20propiedad" ><i class="bi bi-whatsapp" style="font-size: 17px; color: #ffffff9d;"></i></a>
+            <a href="https://wa.me/573223226897?text=Hola%20!%20Estás%20hablando%20con%20el%20equipo%20de%20Luc%20Property.%20¿Cómo%20podemos%20ayudarte%20hoy?%20" ><i class="bi bi-whatsapp" style="font-size: 17px; color: #ffffff9d;"></i></a>
           </div>
         </div>
 
@@ -398,7 +398,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Plantilla descargada desde Bootstrapmade, con fines únicamente académicos ((Miembro - Calletena López Baleta))</span> <span></span></p>
+      <p>© <span>Plantilla descargada desde Bootstrapmade, con fines únicamente académicos (Miembro - Calletena López Baleta)</span> <span></span></p>
       <div class="credits">
       </div>
     </div>
@@ -426,4 +426,24 @@
 
 </body>
 
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2935555-L41QUGLZ7MH7S88B/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
 </html>

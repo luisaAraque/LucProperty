@@ -146,7 +146,7 @@ const propiedades = [
     ciudad: "Bogotá",
     barrio: "Chapinero Alto",
     direccion: "Carrera 7 #65-23",
-    precio: "$8,000,000",
+    precio: "$7,000,000",
     area: 200,
     habitaciones: 4,
     banos: 3,
