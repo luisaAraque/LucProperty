@@ -6,6 +6,10 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
+.body{
+  width: 100%;
+}
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -849,6 +853,16 @@ section,
   inset: 0;
   z-index: 2;
 }
+/* Para pantallas menores a 600px (móviles pequeños) */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
 .hero .container {
   position: relative;
@@ -894,7 +908,7 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .hero p {
